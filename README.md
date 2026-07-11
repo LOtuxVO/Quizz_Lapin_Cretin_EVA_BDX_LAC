@@ -1,1 +1,1 @@
-# Quizz_Lapin_Cretin_EVA_BDX_LAC
+# le quizz de EVA Bordeaux Lac réalisé avec Mélina, merci à elle pour le qizz. Je n'ai que coder son idée.
