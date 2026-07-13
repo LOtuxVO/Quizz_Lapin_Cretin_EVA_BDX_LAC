@@ -1,0 +1,41 @@
+.poster_resultat{
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(40, 40, 60, 0.07);
+  padding: 36px 28px 28px 28px;
+  z-index: 3;
+}
+
+.bouton_chaos,
+.bouton_drama,
+.bouton_stratege {
+  display: flex;
+  flex: 1 1 40%;
+  min-width: 180px;
+  justify-content: center;
+  background: #5c5cb2;
+  color: #fff;
+  border: 1px solid #3a3a7c;
+  border-radius: 8px;
+  padding: 8px 22px;
+  margin: 6px 4px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(40, 40, 60, 0.08);
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.bouton_chaos:hover,
+.bouton_drama:hover,
+.bouton_stratege:hover {
+  background: #3a3a7c;
+  color: #fff;
+  border: 1px solid #222255;
+  box-shadow: 0 2px 10px rgba(40, 40, 60, 0.16);
+}

@@ -1,0 +1,9 @@
+.poster_resultat{
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(40, 40, 60, 0.07);
+  padding: 36px 28px 28px 28px;
+  z-index: 3;
+}
