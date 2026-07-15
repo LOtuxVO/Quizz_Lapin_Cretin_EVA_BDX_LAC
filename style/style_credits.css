@@ -1,0 +1,174 @@
+.credits-header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+}
+
+.credits-header h1 {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.credits-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 5px;
+}
+
+.eva-logo {
+  max-width: 130px;
+  height: auto;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 12px rgba(0, 240, 255, 0.5));
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.eva-logo:hover {
+  filter: drop-shadow(0 0 20px rgba(0, 240, 255, 0.8));
+  transform: scale(1.03);
+}
+
+.credits-content {
+  margin-bottom: 25px;
+}
+
+.credit-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.credit-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.credit-role {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.credit-name {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.credit-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.bouton_lien {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 calc(50% - 6px);
+  min-width: 130px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+}
+
+.bouton_linkedin {
+  background: rgba(0, 240, 255, 0.06);
+  border-color: rgba(0, 240, 255, 0.3);
+  color: var(--color-accent);
+}
+
+.bouton_linkedin:hover {
+  background: var(--color-accent);
+  color: var(--bg-primary);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.bouton_portfolio {
+  background: rgba(157, 78, 221, 0.06);
+  border-color: rgba(157, 78, 221, 0.3);
+  color: var(--color-purple-hover);
+}
+
+.bouton_portfolio:hover {
+  background: var(--color-purple-hover);
+  color: #ffffff;
+  border-color: var(--color-purple-hover);
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.4);
+  transform: translateY(-1px);
+}
+
+.bouton_site_eva {
+  background: rgba(255, 0, 85, 0.06);
+  border-color: rgba(255, 0, 85, 0.3);
+  color: var(--color-danger);
+  flex: 1 1 100%;
+}
+
+.bouton_site_eva:hover {
+  background: var(--color-danger);
+  color: #ffffff;
+  border-color: var(--color-danger);
+  box-shadow: 0 0 15px rgba(255, 0, 85, 0.4);
+  transform: translateY(-1px);
+}
+
+.credits-footer {
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+}
+
+.btn-back:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .credit-links {
+    flex-direction: column;
+  }
+  .bouton_lien {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+}

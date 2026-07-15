@@ -5,27 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style/style_global.css">
         <link rel="stylesheet" href="./style/style_index.css">
-        <link rel="icon" href="./img_global/logo.png">
+        <link rel="icon" href="./img_global/EVA BDX LAC logo.png">
         <title>Quizz Lapin Crétin</title>
     </head>
     <body>
-        
         <div class="poster_introduction">
-            <div class="introduction_accueil ">
-                <br>🐰 QUIZ : “Quel Lapin Crétin sommeille en toi ?”
-                <br><br>🎯 Objectif
-                <br><br>❓ LES QUESTIONS (scoring simple)
-                <br><br>👉 Principe : chaque réponse correspond à un profil
-                <br><br>● A = Le Lapin du Chaos
-                <br><br>● B = Le Lapin Drama
-                <br><br>● C = Le Lapin Stratège
-            </div>
+            <header class="quiz-header">
+                <img src="./img_global/LOGO EVA BORDEAUX-LAC VECTORIEL Fond perdu bis-03.png" alt="EVA BDX LAC Logo" class="eva-logo">
+                <h1>Quel Lapin Crétin sommeille en toi ?</h1>
+            </header>
+            
+            <main class="introduction_accueil">
+                <p class="intro-desc">Découvre ton profil de Lapin Crétin à travers 7 questions fun et décalées ! Chaque réponse correspond à un profil :</p>
+                <ul class="profils-list">
+                    <li class="profil-item chaos">
+                        <span class="profil-badge">A</span>
+                        <span class="profil-name">Le Lapin du Chaos 💥</span>
+                    </li>
+                    <li class="profil-item drama">
+                        <span class="profil-badge">B</span>
+                        <span class="profil-name">Le Lapin Drama 🎭</span>
+                    </li>
+                    <li class="profil-item stratege">
+                        <span class="profil-badge">C</span>
+                        <span class="profil-name">Le Lapin Stratège 🧠</span>
+                    </li>
+                </ul>
+                <p class="rules-note">Le profil final sera celui qui aura obtenu le plus grand nombre de réponses !</p>
+            </main>
 
-            <br><br><a href="./quizz/quizz.html">Faire le quizz</a>
-
-
-            <br><br><a href="./credits.html">credits et droit d'auteur</a>
+            <footer class="action-buttons">
+                <a href="./quizz/quizz.html" class="btn btn-primary">Faire le quizz</a>
+                <a href="./credits.html" class="btn btn-secondary">Crédits</a>
+            </footer>
         </div>
-
     </body>
 </html>

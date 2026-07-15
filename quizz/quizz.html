@@ -5,71 +5,182 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../style/style_global.css">
         <link rel="stylesheet" href="../style/style_quizz.css">
-        <link rel="icon" href="./img_global/logo.png">
+        <link rel="icon" href="../img_global/EVA BDX LAC logo.png">
         <title>Quizz Lapin Crétin</title>
+        <script src="../script/calculateur_resultat.js" defer></script>
     </head>
     <body>
     
         <div class="poster_questions">
-            <h2>1. Quand tu arrives quelque part, tu es plutôt…</h2>
-            <input type="radio" id="A1" name="reponse1" value="1" />
-                <label for="A1">A. Tu fonces sans réfléchir faire ce que tu fais de mieux : te faire remarquer</label>
-            <br><input type="radio" id="B1" name="reponse1" value="1" />
-                <label for="B1">B. Tu observes doucement l’ambiance et les gens et reste légèrement en retrait</label>
-            <br><input type="radio" id="C1" name="reponse1" value="1" />
-                <label for="C1">C. Tu analyses rapidement ce qui se passe autour de toi et regarde qui tu peux rejoindre</label>
+            <header class="quiz-page-header">
+                <img src="../img_global/LOGO EVA BORDEAUX-LAC VECTORIEL Fond perdu bis-03.png" alt="EVA BDX LAC Logo" class="eva-logo">
+                <h1>Le Quizz</h1>
+            </header>
 
-            <h2>2. Face à une situation imprévue, tu fais quoi ?</h2>
-            <input type="radio" id="A2" name="reponse2" value="1" />
-                <label for="A2">A. Tu improvises direct, avancer sans plan ça te connait</label>
-            <br><input type="radio" id="B2" name="reponse2" value="1" />
-                <label for="B2">B. Tu réagis fort émotionnellement (rire, panique, excitation…)</label>
-            <br><input type="radio" id="C2" name="reponse2" value="1" />
-                <label for="C2">C. Tu prends 2 secondes… puis tu transformes ça en opportunité et trouve une solution</label>
+            <form id="quiz-form" onsubmit="return false;">
+                <!-- Question 1 -->
+                <div class="question-block">
+                    <h2>1. Quand tu arrives quelque part, tu es plutôt…</h2>
+                    <div class="options-container">
+                        <label class="option-card" for="A1">
+                            <input type="radio" id="A1" name="reponse1" value="1" />
+                            <span class="option-badge">A</span>
+                            <span class="option-text">Tu fonces sans réfléchir faire ce que tu fais de mieux : te faire remarquer</span>
+                        </label>
+                        <label class="option-card" for="B1">
+                            <input type="radio" id="B1" name="reponse1" value="1" />
+                            <span class="option-badge">B</span>
+                            <span class="option-text">Tu observes doucement l’ambiance et les gens et reste légèrement en retrait</span>
+                        </label>
+                        <label class="option-card" for="C1">
+                            <input type="radio" id="C1" name="reponse1" value="1" />
+                            <span class="option-badge">C</span>
+                            <span class="option-text">Tu analyses rapidement ce qui se passe autour de toi et regarde qui tu peux rejoindre</span>
+                        </label>
+                    </div>
+                </div>
 
-            <h2>3. Dans un groupe, tu es plutôt…</h2>
-            <input type="radio" id="A3" name="reponse3" value="1" />
-                <label for="A3">A. Solaire - Franc - impulsif</label>
-            <br><input type="radio" id="B3" name="reponse3" value="1" />
-                <label for="B3">B. Sensible - à l’écoute - Altruiste</label>
-            <br><input type="radio" id="C3" name="reponse3" value="1" />
-                <label for="C3">C. Positif - Créatif - Organisé</label>
+                <!-- Question 2 -->
+                <div class="question-block">
+                    <h2>2. Face à une situation imprévue, tu fais quoi ?</h2>
+                    <div class="options-container">
+                        <label class="option-card" for="A2">
+                            <input type="radio" id="A2" name="reponse2" value="1" />
+                            <span class="option-badge">A</span>
+                            <span class="option-text">Tu improvises direct, avancer sans plan ça te connait</span>
+                        </label>
+                        <label class="option-card" for="B2">
+                            <input type="radio" id="B2" name="reponse2" value="1" />
+                            <span class="option-badge">B</span>
+                            <span class="option-text">Tu réagis fort émotionnellement (rire, panique, excitation…)</span>
+                        </label>
+                        <label class="option-card" for="C2">
+                            <input type="radio" id="C2" name="reponse2" value="1" />
+                            <span class="option-badge">C</span>
+                            <span class="option-text">Tu prends 2 secondes… puis tu transformes ça en opportunité et trouve une solution</span>
+                        </label>
+                    </div>
+                </div>
 
-            <h2>4. Ton rapport au contrôle, c’est…</h2>
-            <input type="radio" id="A4" name="reponse4" value="1" />
-                <label for="A4">A. Contrôle ? Jamais entendu</label>
-            <br><input type="radio" id="B4" name="reponse4" value="1" />
-                <label for="B4">B. J’essaie… mais mes émotions prennent souvent le dessus</label>
-            <br><input type="radio" id="C4" name="reponse4" value="1" />
-                <label for="C4">C. J’aime avoir une structure… même si j’y déroge souvent</label>
+                <!-- Question 3 -->
+                <div class="question-block">
+                    <h2>3. Dans un groupe, tu es plutôt…</h2>
+                    <div class="options-container">
+                        <label class="option-card" for="A3">
+                            <input type="radio" id="A3" name="reponse3" value="1" />
+                            <span class="option-badge">A</span>
+                            <span class="option-text">Solaire - Franc - impulsif</span>
+                        </label>
+                        <label class="option-card" for="B3">
+                            <input type="radio" id="B3" name="reponse3" value="1" />
+                            <span class="option-badge">B</span>
+                            <span class="option-text">Sensible - à l’écoute - Altruiste</span>
+                        </label>
+                        <label class="option-card" for="C3">
+                            <input type="radio" id="C3" name="reponse3" value="1" />
+                            <span class="option-badge">C</span>
+                            <span class="option-text">Positif - Créatif - Organisé</span>
+                        </label>
+                    </div>
+                </div>
 
-            <h2>5. Ta vibe idéale :</h2>
-            <input type="radio" id="A5" name="reponse5" value="1" />
-                <label for="A5">A. Surprise + imprévu + changement</label>
-            <br><input type="radio" id="B5" name="reponse5" value="1" />
-                <label for="B5">B. Intensité + émotions + Passion</label>
-            <br><input type="radio" id="C5" name="reponse5" value="1" />
-                <label for="C5">C. Fun + optimisme + enthousiasme</label>
-                
-            <h2>6. Quand quelqu’un te dit “t’es vraiment imprévisible”, tu réponds :</h2>
-            <input type="radio" id="A6" name="reponse6" value="1" />
-                <label for="A6">A. “Ca te surprend encore”</label>
-            <br><input type="radio" id="B6" name="reponse6" value="1" />
-                <label for="B6">B. “Pourtant j’ai rien fais de spécial”</label>
-            <br><input type="radio" id="C6" name="reponse6" value="1" />
-                <label for="C6">C. “Tout était prévu pourtant.”</label>
-            
-            <h2>7. Tu trouves un caddie abandonné. Tu…</h2>
-            <input type="radio" id="A7" name="reponse7" value="1" />
-                <label for="A7">A. Montes dedans en criant “BWAAAH !”</label>
-            <br><input type="radio" id="B7" name="reponse7" value="1" />
-                <label for="B7">B. Le transforme en vaisseau spatial.</label>
-            <br><input type="radio" id="C7" name="reponse7" value="1" />
-                <label for="C7">C. Réfléchis à qui à bien pu le laisser en plein milieu du désert</label>
+                <!-- Question 4 -->
+                <div class="question-block">
+                    <h2>4. Ton rapport au contrôle, c’est…</h2>
+                    <div class="options-container">
+                        <label class="option-card" for="A4">
+                            <input type="radio" id="A4" name="reponse4" value="1" />
+                            <span class="option-badge">A</span>
+                            <span class="option-text">Contrôle ? Jamais entendu</span>
+                        </label>
+                        <label class="option-card" for="B4">
+                            <input type="radio" id="B4" name="reponse4" value="1" />
+                            <span class="option-badge">B</span>
+                            <span class="option-text">J’essaie… mais mes émotions prennent souvent le dessus</span>
+                        </label>
+                        <label class="option-card" for="C4">
+                            <input type="radio" id="C4" name="reponse4" value="1" />
+                            <span class="option-badge">C</span>
+                            <span class="option-text">J’aime avoir une structure… même si j’y déroge souvent</span>
+                        </label>
+                    </div>
+                </div>
 
-            <br><br><button class="bouton_resultat" onclick="CalculResultatQuizz()">Voir mon resultat</button>
+                <!-- Question 5 -->
+                <div class="question-block">
+                    <h2>5. Ta vibe idéale :</h2>
+                    <div class="options-container">
+                        <label class="option-card" for="A5">
+                            <input type="radio" id="A5" name="reponse5" value="1" />
+                            <span class="option-badge">A</span>
+                            <span class="option-text">Surprise + imprévu + changement</span>
+                        </label>
+                        <label class="option-card" for="B5">
+                            <input type="radio" id="B5" name="reponse5" value="1" />
+                            <span class="option-badge">B</span>
+                            <span class="option-text">Intensité + émotions + Passion</span>
+                        </label>
+                        <label class="option-card" for="C5">
+                            <input type="radio" id="C5" name="reponse5" value="1" />
+                            <span class="option-badge">C</span>
+                            <span class="option-text">Fun + optimisme + enthousiasme</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question-block">
+                    <h2>6. Quand quelqu’un te dit “t’es vraiment imprévisible”, tu réponds :</h2>
+                    <div class="options-container">
+                        <label class="option-card" for="A6">
+                            <input type="radio" id="A6" name="reponse6" value="1" />
+                            <span class="option-badge">A</span>
+                            <span class="option-text">“Ça te surprend encore”</span>
+                        </label>
+                        <label class="option-card" for="B6">
+                            <input type="radio" id="B6" name="reponse6" value="1" />
+                            <span class="option-badge">B</span>
+                            <span class="option-text">“Pourtant j’ai rien fait de spécial”</span>
+                        </label>
+                        <label class="option-card" for="C6">
+                            <input type="radio" id="C6" name="reponse6" value="1" />
+                            <span class="option-badge">C</span>
+                            <span class="option-text">“Tout était prévu pourtant.”</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="question-block">
+                    <h2>7. Tu trouves un caddie abandonné. Tu…</h2>
+                    <div class="options-container">
+                        <label class="option-card" for="A7">
+                            <input type="radio" id="A7" name="reponse7" value="1" />
+                            <span class="option-badge">A</span>
+                            <span class="option-text">Montes dedans en criant “BWAAAH !”</span>
+                        </label>
+                        <label class="option-card" for="B7">
+                            <input type="radio" id="B7" name="reponse7" value="1" />
+                            <span class="option-badge">B</span>
+                            <span class="option-text">Le transforme en vaisseau spatial.</span>
+                        </label>
+                        <label class="option-card" for="C7">
+                            <input type="radio" id="C7" name="reponse7" value="1" />
+                            <span class="option-badge">C</span>
+                            <span class="option-text">Réfléchis à qui a bien pu le laisser en plein milieu du désert</span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+            <footer class="quiz-footer">
+                <button class="bouton_resultat" onclick="CalculResultatQuizz()">Voir mon résultat</button>
+                <div class="footer-links">
+                    <a href="../index.html">Accueil</a>
+                    <a href="../credits.html">Crédits</a>
+                </div>
+            </footer>
         </div>
 
-        <br><br><a href="../credits.html">credits et droit d'auteur</a>
     </body>
 </html>

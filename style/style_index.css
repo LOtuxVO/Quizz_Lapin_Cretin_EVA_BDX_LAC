@@ -1,16 +1,154 @@
-.introduction_accueil {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.quiz-header {
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
 }
 
-.poster_introduction {
-  max-width: 700px;
-  margin: 40px auto 0 auto;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(40, 40, 60, 0.07);
-  padding: 36px 28px 28px 28px;
-  z-index: 3;
+.eva-logo {
+  max-width: 140px;
+  height: auto;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.3));
 }
+
+h1 {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
+.introduction_accueil {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.intro-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.profils-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.profil-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.profil-item:hover {
+  transform: translateX(5px);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.profil-badge {
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: 1.1rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--color-purple);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(123, 44, 191, 0.4);
+}
+
+.profil-item.chaos .profil-badge {
+  background: var(--color-danger);
+  box-shadow: 0 0 10px rgba(255, 0, 85, 0.4);
+}
+
+.profil-item.stratege .profil-badge {
+  background: var(--color-accent);
+  color: var(--bg-primary);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+.profil-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.rules-note {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-align: center;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.action-buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-purple) 0%, #5c00a3 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(123, 44, 191, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--color-purple-hover) 0%, var(--color-purple) 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(123, 44, 191, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}

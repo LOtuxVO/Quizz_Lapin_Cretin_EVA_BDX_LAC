@@ -1,9 +1,81 @@
-/* police d'écriture EVA */@import url();
-/* url vers tous les trucs de EVA marketing : eva-team-notion.site/EVA-Brand-Marketing-Hub-175c78aa733980528141c9b812d192be */
+/* Importation de polices modernes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Outfit:wght@300;400;600;800&display=swap');
 
-html {
-    background-color: #f5f5f5;
-    font-family:cursive;
+:root {
+  --bg-primary: #0a0a16;
+  --bg-card: rgba(18, 18, 38, 0.85);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0d6;
+  --color-accent: #00f0ff; /* Neon cyan */
+  --color-accent-hover: #00c2cf;
+  --color-purple: #7b2cbf; /* Neon violet */
+  --color-purple-hover: #9d4edd;
+  --color-danger: #ff0055;
+  --font-title: 'Outfit', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body {
+  background: radial-gradient(circle at 50% 0%, #1a1a3a 0%, #0a0a16 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 15px;
+  overflow-x: hidden;
+}
+
+/* Style de carte partagée pour toutes les pages (index, quizz, resultats, credits) */
+.poster_introduction,
+.poster_questions,
+.poster_resultat,
+.poster_credits {
+  width: 100%;
+  max-width: 680px;
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  padding: 30px 24px;
+  margin: 20px auto;
+  z-index: 3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .poster_introduction,
+  .poster_questions,
+  .poster_resultat,
+  .poster_credits {
+    padding: 24px 16px;
+    margin: 10px auto;
+    border-radius: 16px;
+  }
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--text-primary);
+}
