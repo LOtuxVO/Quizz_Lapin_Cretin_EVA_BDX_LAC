@@ -10,7 +10,7 @@ Ce quizz est un projet que j'ai réalisé pour EVA Bordeaux Lac, dans un but de 
 ### 🛠️ Fonctionnalités
 * **🚄 Résultat instantanné** : Le résultat de vôtre quizz est instantanné
 * **❓ Questions** : Un total de sept questions
-* **💡 Types de lapin** : Trois types, Chaos, Drama et Stratège
+* **💡 Types de lapin** : Trois types : Chaos, Drama et Stratège
 
 ## 💻 Stack Technique
 <p align="left">
