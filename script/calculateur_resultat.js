@@ -34,7 +34,7 @@ function CalculResultatQuizz() {
     if (countA >= countB && countA >= countC) {
         redirectPage = "../Resultats/lapin_chaos.html";
     } else if (countB >= countA && countB >= countC) {
-        redirectPage = "../Resultats/lapin_drama.html";
+        redirectPage = "../Resultats/lapin_diva.html";
     } else {
         redirectPage = "../Resultats/lapin_stratege.html";
     }
