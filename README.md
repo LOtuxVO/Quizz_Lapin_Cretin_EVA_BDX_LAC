@@ -19,6 +19,6 @@ Ce quizz est un projet que j'ai réalisé pour EVA Bordeaux Lac, dans un but de 
   <img src="https://img.shields.io/badge/GitHub_Pages-222222?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
-## 🌸 Keep Pushing !
+## 🌸 Allier Technique et Passion !
 > Si ce projet vous a plu, n'hésitez pas à laisser une ⭐ sur le repo ! 
 > | ©EdgarPullès
