@@ -14,6 +14,14 @@ Ce quizz est un projet que j'ai réalisé pour EVA Bordeaux Lac, dans un but de 
 - **❓ Questions** : Un total de sept questions
 - **💡 Types de lapin** : Trois types : Chaos, Drama et Stratège
 
+## 🐰 Lien vers le site
+
+<p align="center">
+  <a href="https://lotuxvo.github.io/Quizz_Lapin_Cretin_EVA_BDX_LAC/">
+    <img src="https://img.shields.io/badge/Quizz%20Lapin%20Cretin%20EVA%20BDX%20LAC-B57EDC?style=for-the-badge&logo=&logoColor=white" width="320" alt="Quizz Lapin Cretin EVA BDX LAC">
+  </a>
+</p>
+
 ## 💻 Stack Technique
 
 <p align="left">
