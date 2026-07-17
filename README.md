@@ -22,6 +22,25 @@ Ce quizz est un projet que j'ai réalisé pour EVA Bordeaux Lac, dans un but de 
   </a>
 </p>
 
+## 📸 QR code pour aller sur le site
+
+<p align="center">
+Les deux QR codes fonctionnent et renvoient sur le site
+</p>
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <b>📸 QR code classique</b><br>
+      <img src="./QR_codes/qr code quizz lapin cretin.png" alt="QR code classique" width="100%"/>
+    </td>
+    <td width="50%" align="center">
+      <b>🐰 QR code spécial</b><br>
+      <img src="./QR_codes/qr-code lapin.png" alt="QR code spécial" width="100%"/>
+    </td>
+  </tr>
+</table>
+
 ## 💻 Stack Technique
 
 <p align="left">
